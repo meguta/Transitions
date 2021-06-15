@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build & Run",
+			"type": "shell",
+			"command": "g++ -w -c src/*.cpp  -std=c++11 -I \"C:\\Program Files (x86)\\SFML\\include\" && g++ -o bin/sfml-app *.o -L \"C:\\Program Files (x86)\\SFML\\lib\" -lsfml-graphics -lsfml-window -lsfml-system && cd bin  && sfml-app.exe",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+		}
+	]
+}
